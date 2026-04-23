@@ -1,0 +1,67 @@
+/* CRIS Dashboard - Professional Theme */
+
+/* General Background and Typography */
+.stApp {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: 'Inter', 'Roboto', sans-serif;
+}
+
+/* Header Typography */
+h1 {
+    font-weight: 800 !important;
+    background: linear-gradient(90deg, #58a6ff, #8a2be2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+}
+
+h2, h3 {
+    font-weight: 600 !important;
+    color: #e6edf3 !important;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 0.3rem;
+}
+
+/* Sidebar Styling */
+[data-testid="stSidebar"] {
+    background-color: #161b22;
+    border-right: 1px solid #30363d;
+}
+
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] {
+    color: #8b949e;
+}
+
+/* Glassmorphism Metrics Cards */
+[data-testid="stMetricValue"] {
+    color: #58a6ff !important;
+    font-weight: 700 !important;
+}
+[data-testid="metric-container"] {
+    background: rgba(22, 27, 34, 0.7) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid #30363d !important;
+    border-radius: 12px !important;
+    padding: 1.2rem !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+[data-testid="metric-container"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(88, 166, 255, 0.1);
+    border-color: #58a6ff !important;
+}
+
+/* Table Styling */
+.stDataFrame {
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Plotly Chart Containers */
+.js-plotly-plot {
+    border-radius: 12px;
+    overflow: hidden;
+}
